@@ -87,7 +87,7 @@ class calculate():
         self.result=False
         
              
-   
+    
         
     def admi(self):
         self.result=False
@@ -98,6 +98,11 @@ class calculate():
     def display(self,value):
         txtdis.delete(0,END)
         txtdis.insert(0,value)
+
+    def square(self):
+        self.result=False
+        self.curr=math.sqrt(float(txtdis.get()))
+        self.display(self.curr)
         
     def clear(self):
         self.result=False
